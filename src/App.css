@@ -1,38 +1,777 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+body {
+  font-family: poppins;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* max-height: 100vh; */
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+.wrapper {
+   max-height: 100vh;
+  max-width:auto; 
+  position: absolute;
+  display: flex;
+  height: 1024px;
+  width: 1440px;
+  margin-left: 50px;
+  /* margin-top: -100px; */
+  background-image: url(./Assets/login_signup_form/bgimg.svg);
+  background-repeat: no-repeat; 
+  background-size:60%;
+  background-position:100% 100%; 
+  border-radius: 24px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px 8px rgba(12, 46, 78, 0.12);
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ellipse1 {
+  position: absolute;
+  width:100%;
+  height:140%;
+  left: 739.67px;
+  top: -149px;
+  transform: rotate(-4.71deg);
+}
+
+.ellipse2 {
+  position: absolute;
+  height: 759.71px;
+  width: 870.27px;
+  background-color: #5AD5F9;
+  border-radius: 50%;
+  left: 825.51px; 
+  top: -119px;
+  transform: rotate(10deg);
+}
+
+.line1{
+  position: absolute;
+  width:75%;
+  height:105%;
+  left: 689.42px; 
+  top: -56.88px;
+  transform: rotate(-3.71deg);
+}
+
+.line2 {
+  position: absolute;
+  width:80%;
+  height:105%;
+  left: 774.53px; 
+  top: -79.69px;
+}
+
+.no_of_events_ellipse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 264px;
+  top: 280px;
+  border-radius: 50px;
+  background: #5AD5F9;
+}
+
+.login_logo  {
+  position: absolute;
+  top: 97px;
+  Left: 227px;
+}
+
+.signup_logo  {
+  position: absolute;
+  height: 10%;
+  top: 57px;
+  Left: 227px;
+}
+.login_img  {
+  position: absolute;
+  width: 324px;
+  height: 324px;
+  left: 126px;
+  top: 372px;
+}
+.signup_img  {
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  left: 146px;
+  top: 352px;
+}
+
+#login_page_text_welcome {
+  position: absolute;
+  width: 251px;
+  height: 46px;
+  left: 191px;
+  top: 213px;
+  font-family: 'Poppins';
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#signup_page_text_createaccount {
+  position: absolute;
+  width: 251px;
+  height: 46px;
+  left: 146px;
+  top: 156px;
+  font-family: 'Poppins';
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#signup_page_text_accounttype {
+  position: absolute;
+  width: 251px;
+  height: 46px;
+  left: 146px;
+  top: 210px;
+  font-family: 'Poppins';
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 17.5px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.login_text1{
+  position: absolute;
+  width: 325px;
+  height: 46px;
+  left: 154px;
+  top: 355px;
+  font-family: 'Poppins';
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.login_footer_left_checkbox {
+  position: absolute;
+  width: 444px;
+  height: 24px;
+  left: 124px;
+  top: 676px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #939393;
+}
+
+.signup_footer_left_checkbox {
+  position: absolute;
+  width: 444px;
+  height: 24px;
+  left: 104px;
+  top: 656px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #939393;
+}
+
+.signup_footer_left_terms {
+  position: absolute;
+  width: 444px;
+  height: 24px;
+  left: 8px;
+  top: 686px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #939393;
+  white-space: nowrap;
+}
+
+.signup_terms_link {
+  position: absolute;
+  width: 63px;
+  height: 24px;
+  left: 383px;
+  top: 686px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.login_checkbox {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 93px;
+  top: 676px;
+  background: #5AD5F9;
+  border-radius: 4px;
+}
+
+.signup_checkbox {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 73px;
+  top: 656px;
+  background: #5AD5F9;
+  border-radius: 4px;
+}
+
+
+.login_footer_right_text {
+  position: absolute;
+  width: 226px;
+  height: 24px;
+  left: 1046px;
+  top: 682px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #939393;
+}
+
+.login_footer_right_line {
+  position: absolute;
+  width: 18px;
+  height: 0px;
+  left: 1294px;
+  top: 693px;
+  border: 2px solid #939393;
+  transform: rotate(90deg);
+}
+
+.login_footer_right_signup {
+  position: absolute;
+  width: 63px;
+  height: 24px;
+  left: 1327px;
+  top: 682px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.login_text_LOGIN {
+  position: absolute;
+  width: 79px;
+  height: 46px;
+  left: 982px;
+  top: 31px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.signup_text_SIGNUP {
+  position: absolute;
+  /* width: 79px; */
+  height: 46px;
+  /* left: 1007px; */
+  top: 23px;
+  width: 96px;
+  height: 46px;
+  left: 978px;
+  /* top: 108px; */
+  font-family: 'Poppins';
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login_line_LOGIN {
+  position: absolute;
+  width: 366px;
+  height: 0px;
+  left: 1085px;
+  top:54px;
+  border: 1.5px solid #000000;
+ }
+
+.signup_line_SIGNUP {
+  position: absolute;
+  /* width: 346px; */
+  height: 0px;
+  /* left: 1120px; */
+  top:44px;
+  border: 1.5px solid #000000;
+  width: 340px;
+  left: 1100px;
+}
+
+.signup_line_OR {
+  position: absolute;
+  /* width: 418px; */
+  height: 0px;
+  /* left: 1045px; */
+  top:443px;
+  width: 424px;
+  left: 1016px;
+  border: 1.5px solid #000000;
+}
+
+.emailbox {
+  position: absolute;
+  width: 379px;
+  height: 52px;
+  left: 982px;
+  top: 107px;
+  padding-left: 15px;
+  padding-top: 8px;
+  background: #F4FDFF;
+  border-radius: 12px;
+}
+
+.signup_emailbox {
+  position: absolute;
+  /* width: 379px; */
+  height: 52px;
+  /* left: 1007px; */
+  top: 152px;
+  width: 419px;
+  left: 971px;
+  padding-left: 15px;
+  padding-top: 8px;
+  background: #F4FDFF;
+  border-radius: 12px;
+}
+
+.signup_Fname {
+  position: absolute;
+  /* width: 182px; */
+  height: 52px;
+  /* left: 1007px; */
+  top: 82px;
+  padding-left: 15px;
+  padding-top: 8px;
+  background: #F4FDFF;
+  border-radius: 12px;  
+  width: 202px;
+  left: 971px;
+}
+
+.signup_Lname {
+  position: absolute;
+  /* width: 182px; */
+  height: 52px;
+  /* left: 1203px; */
+  top: 82px;
+  width: 202px;
+  left: 1188px;
+  padding-left: 15px;
+  padding-top: 8px;
+  background: #F4FDFF;
+  border-radius: 12px;  
+}
+
+.passwordbox {
+  position: absolute;
+  width: 379px;
+  height: 52px;
+  left: 982px;
+  top: 182px;
+  padding-left: 10px;
+   background: #F4FDFF;
+  border-radius: 12px;
+}
+
+.signup_passwordbox {
+  position: absolute;
+  /* width: 379px; */
+  height: 52px;
+  /* left: 1007px; */
+  top: 222px;
+  width: 419px;
+  left: 971px;
+  padding-left: 10px;
+   background: #F4FDFF;
+  border-radius: 12px;
+}
+
+.forgot_password_link {
+  position: absolute;
+  width: 172px;
+  height: 23px;
+  left: 1189px;
+  top: 241px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.text_OR {
+  position: absolute;
+  width: 29px;
+  height: 30px;
+  left: 1160px;
+  top: 365px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.signup_text_OR {
+  position: absolute;
+  /* width: 29px; */
+  height: 30px;
+  /* left: 1007px; */
+  top: 430px;
+  width: 26px;
+  left: 978px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.btn_gmail_signup {
+  position: absolute;
+  background-image: url('./Assets/login_signup_form/gmail_icononly.svg');
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position:.6cm;
+  padding-top:15px;
+  padding-right: 30px;
+  /* width: 220px; */
+  height: 52px;
+  /* left: 1168px; */
+  top: 529px; 
+  width: 300px;
+  left: 1090px;
+  font-family: poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-align:right;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+}
+
+.btn_gmail_login {
+  position: absolute;
+  background-image: url('./Assets/login_signup_form/gmail_icononly.svg');
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position:1cm;
+  padding-top:11px;
+  width: 300px;
+  height: 52px;
+  left: 1027px;
+  top: 404px; 
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  text-align:center;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+}
+
+.btn_signup {
+  position: absolute;
+  /* width: 182px; */
+  height: 52px;
+  /* left: 1204px; */
+  top: 354px;
+  width: 202px;
+  left: 1188px;
+  padding-top: 13px;
+  text-align: center;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align:center;
+  background: #000000;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.signup_gender {
+  position: absolute;
+  /* width: 182px; */
+  height: 52px;
+  /* left: 1007px; */
+  top: 354px;
+  width: 202px;
+  left: 971px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  background: #F4FDFF;
+  border: none;
+  color:#939393;
+  text-align:center;
+  border-radius: 12px;
+}
+
+.signup_ISD_code {
+  position: absolute;
+  /* width: 112px; */
+  height: 52px;
+  /* left: 1007px; */
+  top: 289px;
+  width: 108px;
+  left: 971px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  background: #F4FDFF;
+  padding-top: 11px;
+  border: none;
+  color:#939393;
+  text-align:center;
+  border-radius: 12px;
+}
+
+.signup_phone_no {
+  position: absolute;
+  /* width: 262px; */
+  height: 52px;
+  /* left: 1127px; */
+  top: 289px;
+  width: 300px;
+  left: 1090px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  background: #F4FDFF;
+  border: none;
+  color:#939393;
+  padding-top:11px;
+  padding-left:15px;
+  text-align:left;
+  border-radius: 12px;
+}
+
+.btn_login {
+  position: absolute;
+  width: 379px;
+  height: 52px;
+  left: 982px;
+  top: 294px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align:center;
+  background: #000000;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.btn_Apple_Id {
+  width: 300px;
+  height: 52px;
+  left: 1027px;
+  top: 489px;
+  position: absolute;
+  background-image: url('./Assets/login_signup_form/apple_logo.svg');
+  background-repeat: no-repeat;
+  background-size:7%;
+  background-position: 1.1cm;
+  background-color: #000000;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 13px;
+  padding-left:25px;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 50px;
+  z-index: 40;
+}
+
+.btn_Apple_Id_signup {
+  /* width: 220px; */
+  height: 52px;
+  /* left: 1168px; */
+  top: 469px;
+  width: 300px;
+  left: 1090px;
+  position: absolute;
+  background-image: url('./Assets/login_signup_form/apple_logo.svg');
+  background-repeat: no-repeat;
+  background-size:7%;
+  background-position: .6cm;
+  background-color: #000000;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-left:25px;
+  padding-right:18px;
+  color: #FFFFFF;
+  text-align: Right;
+  border-radius: 50px;
+  z-index: 40;
+}
+
+/* .btn_signup_text {
+  position: absolute;
+  width: 75px;
+  height: 24px;
+  left: 1135px;
+  top: 309px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align:center;
+  border-radius: 12px;
+  z-index: 0;
+} */
+
+.remember_me{
+  position: absolute;
+  width: 111px;
+  height: 23px;
+  left: 942px;
+  top: 241px;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.remember_me_text{
+  position: absolute;
+  width: 111px;
+  height: 23px;
+  left: 1020px;
+  top: 241px;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.signup_usetype_radio_group {
+    margin: 10px;
+  padding: 10px;
+  left: 179px;
+    /* left: 154px;
+  top: 285px; */
+}
+
+.signup_elel_user_radio {
+  position: absolute;
+  width: 250px;
+  height: 56px;
+  top: 255px;
+  background: #5AD5F9;
+  font-family: poppins;
+  font-size: 16px;  
+  line-height: 24px;
+  font-weight: 500;
+  opacity: 0.7;
+  border-radius: 50px;
+}
+
+.signup_event_owner_radio {
+  position: absolute;
+  width: 250px;
+  height: 56px;
+  top: 325px;
+  background: #D1F5FF;
+  font-family: poppins;
+  font-size: 24px; 
+  color: #000000;
+  text-align: center; 
+  /* line-height: 24px; */
+  font-weight: 700;
+  opacity: 0.8;
+  border-radius: 50px;
+}
+
+.signup_event_owner_radio label , .signup_elel_user_radio label {
+  font-family: poppins !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  text-align: center !important;
 }

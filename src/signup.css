@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: auto;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  height: 1024px;
+  width: 1440px;
+  border-radius: 24px;
+  box-shadow: 0px 4px 10px 8px rgba(12, 46, 78, 0.12);
+  overflow: hidden;
+  margin-top: 300px; 
+}
+
+/* @media screen and (max-width: 1440px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+  }
+} */
+
+.ellipse1 {
+  position: absolute;
+  /* left: 633.67px; */
+  /* top: -70px; */
+  top: 0px;
+  left: 623.67px
+}
+
+.ellipse2 {
+  position: absolute;
+  /* left: 735.51px; */
+  /* top: -59px; */
+  left: 745.51px;
+  top: -9px;
+}
+
+.line1{
+  position: absolute;
+  /* left: 591.42px; */
+  /* top: -62.88px; */
+  left: 561.42px;
+  top: 0px;
+}
+
+.line2 {
+  position: absolute;
+  /* left: 714.53px; */
+  /* top: -80.69px; */
+  left: 694.53px;
+  top: -0.69px;
+}
+
+.no_of_events_ellipse {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 244px;
+  top: 389px;
+  border-radius: 50px;
+  background: #5AD5F9;
+}
+
+.logo  {
+  position: absolute;
+  height: 10%;
+  width:auto;
+  top: 167px;
+  Left: 187px;
+}
+
+.login_img  {
+  position: absolute;
+  width: 374px;
+  height: 374px;
+  left: 96px;
+  top: 522px;
+}
+
+#loginpage {
+  position: absolute;
+  width: 251px;
+  height: 46px;
+  left: 151px;
+  top: 293px;
+  font-family: 'Poppins';
+  font-style: normal;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 46px;
+  /* identical to box height, or 164% */
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.text1{
+  position: absolute;
+  width: 325px;
+  height: 46px;
+  left: 114px;
+  top: 475px;
+  font-family: 'Poppins';
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 46px;
+  /* identical to box height, or 209% */
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.login_footer_left_checkbox {
+  position: absolute;
+  width: 444px;
+  height: 24px;
+  left: 64px;
+  top: 966px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  text-align: center;
+  color: #939393;
+}
+
+.checkbox {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 53px;
+  top: 966px;
+  background: #5AD5F9;
+  border-radius: 4px;
+}
+
+.login_footer_right_text {
+  position: absolute;
+  width: 226px;
+  height: 24px;
+  left: 1046px;
+  top: 972px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #939393;
+}
+
+.login_footer_right_line {
+  position: absolute;
+  width: 18px;
+  height: 0px;
+  left: 1294px;
+  top: 980px;
+  border: 2px solid #939393;
+  transform: rotate(90deg);
+}
+
+.login_footer_right_signup {
+  position: absolute;
+  width: 63px;
+  height: 24px;
+  left: 1327px;
+  top: 972px;
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.login_text_LOGIN {
+  position: absolute;
+  width: 79px;
+  height: 46px;
+  left: 972px;
+  top: 111px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 46px;
+  /* identical to box height, or 177% */
+  text-align: right;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.login_line_LOGIN {
+  position: absolute;
+  width: 366px;
+  height: 0px;
+  left: 1075px;
+  top: 134px;
+  border: 1.5px solid #000000;
+}
+
+.emailbox {
+  position: absolute;
+  width: 419px;
+  height: 72px;
+  left: 971px;
+  top: 187px;
+  /* input */
+  background: #F4FDFF;
+  border-radius: 12px;
+  text-align: center;
+}
+.emailbox input[type="email"] {
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: left;
+}
+.passwordbox {
+  position: absolute;
+  width: 419px;
+  height: 72px;
+  left: 971px;
+  top: 282px;
+  /* input */
+  background: #F4FDFF;
+  border-radius: 12px;
+  text-align: center;
+}
+.passwordbox input[type="password"] {
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: left;
+}
+
+
+.btn_signup {
+  position: absolute;
+  width: 419px;
+  height: 72px;
+  left: 971px;
+  top: 434px;
+  background: #000000;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.forgot_password_link {
+  position: absolute;
+  width: 172px;
+  height: 23px;
+  left: 1219px;
+  top: 371px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-decoration: none;
+  /* identical to box height */
+  color: #000000;
+}
+
+.text_OR {
+  position: absolute;
+  width: 29px;
+  height: 30px;
+  left: 1166px;
+  top: 532px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #000000;
+}
+
+/* .btn_gmail_signup {
+  position: absolute;
+  width: 300px;
+  height: 66px;
+  left: 1031px;
+  top: 584px; 
+  background: #FFFFFF;
+  /* border-radius: 50px; */
+  /* text-align: center;  */
+/* } */
+.btn_signup button {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-top: 18px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn_appleid_signup {
+  position: absolute;
+  width: 300px;
+  height: 66px;
+  left: 1031px;
+  top: 674px;
+  background: #000000;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.btn_signup_text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.remember_me{
+  position: absolute;
+  width: 111px;
+  height: 23px;
+  left: 930px;
+  top: 371px;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.remember_me_text{
+  position: absolute;
+  width: 111px;
+  height: 23px;
+  left: 1010px;
+  top: 371px;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.btn_gmail_signup {
+    position: absolute;
+    background-image: url('./Assets/login_signup_form/gmail_icon.svg');
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position:7;
+    width: 300px;
+    height: 52px;
+    left: 1057px;
+    top: 524px; 
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    /* z-index: 10; */
+  }
